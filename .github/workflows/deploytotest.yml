@@ -13,17 +13,6 @@ jobs:
     if: github.event.pull_request.merged == true
     steps:
     - uses: actions/checkout@v2
-
-    - name: Publish to Store
-      id: sncicd-publish-app
-      uses: ServiceNow/sncicd-publish-app@1.2.0
-      with:
-        versionFormat: detect
-      env:
-        snowUsername: ${{ secrets.NOW_USERNAME }}
-        snowPassword: ${{ secrets.NOW_PASSWORD }}
-        snowSourceInstance: ${{ secrets.NOW_DEV_INSTANCE }}
-        appSysID: ${{ secrets.APP_SYS_ID }}
           
     - name: Create Tag in repository
       if: ${{ success() && steps.sncicd-publish-app.outputs.newVersion }}
