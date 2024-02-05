@@ -4,6 +4,8 @@
         <copied_from/>
         <description>Insert a record into 'x_snc_cicd_demoapp_test_table' with the following values:
 Test field = abcdefghijklmnopqrstuvwxyz
+and Test field 3 = abcdefghijklmnopqrstuvwxyz
+and Test field 4 = abcdefghijklmnopqrstuvwxyz
 Confirm the record was successfully inserted</description>
         <display_name>Record Insert</display_name>
         <inputs/>
@@ -15,14 +17,14 @@ Confirm the record was successfully inserted</description>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-02-05 22:53:37</sys_created_on>
         <sys_id>de7668ff2f884290c57455272799b6ca</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Record Insert</sys_name>
         <sys_package display_value="CICD DemoApp" source="x_snc_cicd_demoapp">a810f7e3ac4002107f444a3010ee2909</sys_package>
         <sys_policy/>
         <sys_scope display_value="CICD DemoApp">a810f7e3ac4002107f444a3010ee2909</sys_scope>
         <sys_update_name>sys_atf_step_de7668ff2f884290c57455272799b6ca</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-02-05 22:53:37</sys_updated_on>
+        <sys_updated_on>2024-02-05 23:18:44</sys_updated_on>
         <table>x_snc_cicd_demoapp_test_table</table>
         <test display_value="Run this test">314c5877acc002107f444a3010ee2933</test>
         <timeout/>
@@ -79,10 +81,10 @@ Confirm the record was successfully inserted</description>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-02-05 22:53:37</sys_created_on>
         <sys_id>e39624ff2f884290c57455272799b64b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-02-05 22:53:37</sys_updated_on>
-        <value>test_field=abcdefghijklmnopqrstuvwxyz^EQ</value>
+        <sys_updated_on>2024-02-05 23:18:44</sys_updated_on>
+        <value>test_field=abcdefghijklmnopqrstuvwxyz^test_field_3=abcdefghijklmnopqrstuvwxyz^test_field_4=abcdefghijklmnopqrstuvwxyz^EQ</value>
         <variable display_value="Field values">dd54cf535320220002c6435723dc34fd</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_14872288df60220062fe6c7a4df26319^id=de7668ff2f884290c57455272799b6ca"/>
