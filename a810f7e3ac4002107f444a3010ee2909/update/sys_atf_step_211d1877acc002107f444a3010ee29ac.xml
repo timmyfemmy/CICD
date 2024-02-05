@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Run Server Side Validation Script</description>
+        <display_name>Run Server Side Script</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes>Run Server Side Validation Script</notes>
+        <order>2</order>
+        <snapshot/>
+        <step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-05 22:15:06</sys_created_on>
+        <sys_id>211d1877acc002107f444a3010ee29ac</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="CICD DemoApp" source="x_snc_cicd_demoapp">a810f7e3ac4002107f444a3010ee2909</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CICD DemoApp">a810f7e3ac4002107f444a3010ee2909</sys_scope>
+        <sys_update_name>sys_atf_step_211d1877acc002107f444a3010ee29ac</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-05 22:15:38</sys_updated_on>
+        <table/>
+        <test display_value="Run this test">314c5877acc002107f444a3010ee2933</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=211d1877acc002107f444a3010ee29ac"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>211d1877acc002107f444a3010ee29ac</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-05 22:15:06</sys_created_on>
+        <sys_id>57cd5cb7acc002107f444a3010ee2972</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-05 22:15:38</sys_updated_on>
+        <value>(function(outputs, steps, stepResult, assertEqual) {&#13;
+	var gr = new GlideRecord("sys_script_include");&#13;
+    gr.get(steps('b08c9c77acc002107f444a3010ee292f').first_record);&#13;
+	&#13;
+	var api_name = 'new ' + gr.getValue('api_name') +'()';&#13;
+	//var ev = new GlideScopedEvaluator();&#13;
+	var si_obj = eval(api_name);&#13;
+	&#13;
+	stepResult.setOutputMessage("Successfully instantiated script include: " + si_obj.sayHello());&#13;
+	&#13;
+	&#13;
+})(outputs, steps, stepResult, assertEqual);</value>
+        <variable display_value="Test script">989d9e235324220002c6435723dc3484</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>211d1877acc002107f444a3010ee29ac</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-05 22:15:06</sys_created_on>
+        <sys_id>93cd5cb7acc002107f444a3010ee2972</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-05 22:15:06</sys_updated_on>
+        <value>3.1</value>
+        <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
+    </sys_variable_value>
+</record_update>
