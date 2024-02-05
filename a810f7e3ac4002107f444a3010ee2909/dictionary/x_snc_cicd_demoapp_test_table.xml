@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0435ec7f2f884290c57455272799b69e" label="Test Table" max_length="40" name="x_snc_cicd_demoapp_test_table" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Test field" max_length="40" name="test_field" type="string"/>
+    </element>
+</database>
