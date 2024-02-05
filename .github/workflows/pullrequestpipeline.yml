@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
       - master
+      - sn_instances/dev76726
      
 jobs:
   build:
